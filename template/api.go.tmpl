@@ -1,0 +1,9 @@
+package api
+
+import "github.com/gin-gonic/gin"
+
+var {{.ApiExport}} = new({{.ApiName}})
+
+type {{.ApiName}} struct{}
+
+func (*{{.ApiName}}) Get(c *gin.Context) {}

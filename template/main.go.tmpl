@@ -1,0 +1,14 @@
+package main
+
+import(
+	"{{.ModuleName}}/router"
+)
+
+func main() {
+	engine := router.InitRouter()
+
+	err := engine.Run(":4001")
+	if err != nil {
+		panic(err)
+	}
+}

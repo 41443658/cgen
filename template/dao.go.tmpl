@@ -1,0 +1,7 @@
+package dao
+
+var {{.DaoExport}} = new({{.DaoName}})
+
+type {{.DaoName}} struct{}
+
+func (*{{.DaoName}}) Get() {}
