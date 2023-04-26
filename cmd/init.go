@@ -69,7 +69,7 @@ func initScaffold(cnf *InitConfig) {
 	fmt.Println("gin framework and other dependency install successfully!")
 	fmt.Println("start to install gentool")
 	//install gentool
-	installcmd := exec.Command("go", "install", "gorm.io/gen/tools/gentool@latest")
+	installcmd := exec.Command("go", "install", "gorm.io/gen/tools/gentool@v0.3.21")
 	if err := installcmd.Run(); err != nil {
 		panic(err)
 	}
